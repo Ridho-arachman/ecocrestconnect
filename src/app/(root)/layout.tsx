@@ -1,3 +1,4 @@
+import Navbar from "@/components/ui/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,8 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-primary-foreground">{children}</body>
+    <html lang="id" data-theme="light">
+      <body className="bg-primary-foreground">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
