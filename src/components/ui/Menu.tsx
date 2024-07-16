@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 type Props = {
   href?: string;
@@ -40,40 +39,35 @@ const Menu: React.FC<Props> = ({ href = "/", type }) => {
         <Image src={"/logo.png"} alt="Gambar Logo" width={100} height={100} />
       </li>
       <li>
-        <a>Item 1</a>
+        <Link href={"/"}>Beranda</Link>
+      </li>
+      <li>
+        <Link href={"/"}>Tentang Kami</Link>
       </li>
       <li>
         <details open>
-          <summary>Parent</summary>
+          <summary>Layanan</summary>
           <ul>
             <li>
-              <a>Submenu 1</a>
+              <Link href={"/"}>Artikel</Link>
             </li>
             <li>
-              <a>Submenu 2</a>
+              <Link href={"/"}>Acara</Link>
             </li>
             <li>
-              <details open>
-                <summary>Parent</summary>
-                <ul>
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <Link href={"/"}>Komunitas</Link>
             </li>
           </ul>
         </details>
       </li>
-      <li>
-        <a>Item 3</a>
-      </li>
     </ul>
   );
-  return <>{type === "sm-md" ? menuSmMd : menuLg}</>;
+  return (
+    <>
+      {type === "sm-md" && menuSmMd}
+      {type === "lg" && menuLg}
+    </>
+  );
 };
 
 export default Menu;

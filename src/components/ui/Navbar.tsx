@@ -1,8 +1,7 @@
 "use client";
-
 import { useState } from "react";
-import Menu from "./Menu";
-import Button from "./Button";
+import Menu from "@/ui/Menu";
+import Button from "@/ui/Button";
 import { Menu as MenuIcon, X } from "lucide-react";
 import Image from "next/image";
 
@@ -10,11 +9,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleClick = (): void => setOpen(!open);
   return (
-    <nav className="navbar w-full fixed top-0 shadow ">
+    <nav className="navbar w-full fixed top-0 shadow z-10 bg-white px-10">
       <div className="navbar-start flex flex-row">
         <Menu type="sm-md" />
         <Button
-          className="absolute top-5 left-6 lg:hidden z-20"
+          className="absolute top-5 left-6 lg:hidden z-20 text-black"
           onClick={handleClick}
         >
           {open ? <X /> : <MenuIcon />}
@@ -25,7 +24,7 @@ const Navbar = () => {
         <Image src={"/logo.png"} alt="Gambar Logo" width={50} height={50} />
       </div>
       <div className="navbar-end">
-        <Button className="btn btn-primary btn-md">Masuk</Button>
+        <Button className={"btn btn-primary btn-sm  md:btn-lg"}>Daftar</Button>
       </div>
     </nav>
   );
