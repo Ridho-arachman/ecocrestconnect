@@ -7,8 +7,8 @@ type Props = {
 };
 
 const Menu: React.FC<Props> = ({ href = "/", type }) => {
-  const menuSmMd = (
-    <ul className="hidden lg:flex menu menu-horizontal px-1">
+  const menuLg = (
+    <ul className="hidden lg:flex menu menu-horizontal px-1 font-medium">
       <li>
         <Link href={href}>Beranda</Link>
       </li>
@@ -33,7 +33,7 @@ const Menu: React.FC<Props> = ({ href = "/", type }) => {
       </li>
     </ul>
   );
-  const menuLg = (
+  const menuSmMd = (
     <ul className="menu lg:hidden fixed z-10 top-0 left-0 right-0 w-[100vw] h-max pt-16 bg-base-200">
       <li className="flex flex-row items-center justify-start">
         <Image src={"/logo.png"} alt="Gambar Logo" width={100} height={100} />

@@ -1,13 +1,19 @@
+import Button from "@/ui/Button";
 import Card from "@/ui/Card";
+import { ChevronRight } from "lucide-react";
 
 const SectionDaftarFitur = () => {
   return (
     <section className="flex flex-col items-center px-5 mt-16 justify-center">
       <div className="text-center mb-14">
-        <span className="font-medium">Platform</span>
+        <span className="font-bold">EcoCrestConnect</span>
         <div className="mt-6">
           <h2 className="text-3xl font-bold mb-4 px-9">
-            Temukan Fitur Utama Kami di Sini
+            Temukan
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 px-2">
+              Fitur Utama
+            </span>
+            Kami di Sini
           </h2>
           <p className="md:px-24">
             Kami menyediakan berbagai fitur yang akan membantu Anda terlibat
@@ -17,7 +23,7 @@ const SectionDaftarFitur = () => {
         </div>
       </div>
       <div>
-        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <Card
             alt="Gambar Card"
             title="Edukasi Lingkungan"
@@ -50,6 +56,14 @@ const SectionDaftarFitur = () => {
             height={300}
             width={300}
           />
+        </div>
+        <div className="flex justify-center gap-5 mt-10">
+          <Button className="btn btn-outline rounded-none">
+            Lihat Selengkapnya
+          </Button>
+          <Button className="btn btn-ghost rounded-none">
+            Daftar Sekarang <ChevronRight />
+          </Button>
         </div>
       </div>
     </section>

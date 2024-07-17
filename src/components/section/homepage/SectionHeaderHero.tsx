@@ -18,7 +18,7 @@ const SectionHeaderHero = () => {
             Bergabunglah dengan kami dalam upaya pelestarian lingkungan untuk
             masa depan yang lebih baik.
           </p>
-          <Button className="btn btn-primary text-lg">Gabung</Button>
+          <Button className="btn btn-primary text-lg text-white">Gabung</Button>
         </div>
       </div>
     </section>

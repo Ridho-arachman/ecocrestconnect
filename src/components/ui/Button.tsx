@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 type Props = {
   className?: string;
   children?: React.ReactNode;
@@ -12,7 +10,7 @@ const Button: React.FC<Props> = ({ className, children, onClick }) => {
       <button
         aria-label="button"
         type="button"
-        className={cn("text-white", className)}
+        className={className}
         onClick={onClick}
       >
         {children}

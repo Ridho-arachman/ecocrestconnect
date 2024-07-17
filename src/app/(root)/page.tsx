@@ -1,5 +1,6 @@
 import SectionDaftarFitur from "@/section/homepage/SectionDaftarFitur";
 import SectionHeaderHero from "@/section/homepage/SectionHeaderHero";
+import SectionManfaat from "@/section/homepage/SectionManfaat";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <SectionHeaderHero />
       <SectionDaftarFitur />
+      <SectionManfaat />
     </>
   );
 };
