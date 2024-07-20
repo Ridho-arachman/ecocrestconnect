@@ -1,6 +1,7 @@
 import Button from "@/ui/Button";
 import Card from "@/ui/Card";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const SectionDaftarFitur = () => {
   return (
@@ -23,47 +24,53 @@ const SectionDaftarFitur = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-          <Card
-            alt="Gambar Card"
-            title="Edukasi Lingkungan"
-            description="Baca artikel, blog, dan tonton video tentang isu-isu lingkungan dan cara melestarikannya."
-            src="/1.jpg"
-            height={300}
-            width={300}
-          />
-          <Card
-            alt="Gambar Card"
-            title="Kegiatan dan Event"
-            description="Temukan kalender kegiatan lingkungan lokal dan global serta ikut serta dalam acara yang menarik."
-            src="/1.jpg"
-            height={300}
-            width={300}
-          />
-          <Card
-            alt="Gambar Card"
-            title="Komunitas Lingkungan"
-            description="Bergabunglah dengan forum dan grup diskusi untuk berbagi ide, tips, dan pengalaman tentang pelestarian lingkungan."
-            src="/1.jpg"
-            height={300}
-            width={300}
-          />
-          <Card
-            alt="Gambar Card"
-            title="Komunitas Lingkungan"
-            description="Bergabunglah dengan forum dan grup diskusi untuk berbagi ide, tips, dan pengalaman tentang pelestarian lingkungan."
-            src="/1.jpg"
-            height={300}
-            width={300}
-          />
+        <div className="flex">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 m-auto">
+            <Card
+              alt="Gambar Card"
+              title="Edukasi Lingkungan"
+              description="Baca artikel, blog, dan tonton video tentang isu-isu lingkungan dan cara melestarikannya."
+              src="/1.jpg"
+              height={300}
+              width={300}
+            />
+            <Card
+              alt="Gambar Card"
+              title="Kegiatan dan Event"
+              description="Temukan kalender kegiatan lingkungan lokal dan global serta ikut serta dalam acara yang menarik."
+              src="/1.jpg"
+              height={300}
+              width={300}
+            />
+            <Card
+              alt="Gambar Card"
+              title="Komunitas Lingkungan"
+              description="Bergabunglah dengan forum dan grup diskusi untuk berbagi ide, tips, dan pengalaman tentang pelestarian lingkungan."
+              src="/1.jpg"
+              height={300}
+              width={300}
+            />
+            <Card
+              alt="Gambar Card"
+              title="Komunitas Lingkungan"
+              description="Bergabunglah dengan forum dan grup diskusi untuk berbagi ide, tips, dan pengalaman tentang pelestarian lingkungan."
+              src="/1.jpg"
+              height={300}
+              width={300}
+            />
+          </div>
         </div>
         <div className="flex justify-center gap-5 mt-10">
           <Button className="btn btn-outline rounded-none">
             Lihat Selengkapnya
           </Button>
-          <Button className="btn btn-ghost rounded-none">
-            Daftar Sekarang <ChevronRight />
-          </Button>
+          <Link
+            href={""}
+            className="btn btn-ghost hover:underline hover:decoration-2 rounded-none hover:bg-white hover:underline-offset-8 group/link"
+          >
+            Daftar Sekarang{" "}
+            <ChevronRight className="group-hover/link:rotate-90" />
+          </Link>
         </div>
       </div>
     </section>

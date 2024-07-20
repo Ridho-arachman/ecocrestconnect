@@ -11,8 +11,8 @@ type Props = {
   height: number;
   lessPadding?: boolean;
   btn?: boolean;
-  btncolor?: string;
-  btndescription?: string;
+  btnClassname?: string;
+  btnDescription?: string;
 };
 const Card: React.FC<Props> = ({
   title,
@@ -23,8 +23,8 @@ const Card: React.FC<Props> = ({
   width,
   lessPadding = false,
   btn = false,
-  btncolor,
-  btndescription,
+  btnClassname,
+  btnDescription,
 }) => {
   const normalCard = (
     <div
@@ -46,11 +46,7 @@ const Card: React.FC<Props> = ({
         <h2 className="card-title font-semibold">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          {!!btn && (
-            <Button className={cn("btn btn-primary", btncolor)}>
-              {btndescription}
-            </Button>
-          )}
+          {!!btn && <Button className={btnClassname}>{btnDescription}</Button>}
         </div>
       </div>
     </div>
