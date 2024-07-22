@@ -1,4 +1,5 @@
 import SectionCaraKerja from "@/section/homepage/SectionCaraKerja";
+import SectionCTA from "@/section/homepage/SectionCTA";
 import SectionDaftarFitur from "@/section/homepage/SectionDaftarFitur";
 import SectionHeaderHero from "@/section/homepage/SectionHeaderHero";
 import SectionManfaat from "@/section/homepage/SectionManfaat";
@@ -18,6 +19,7 @@ const Home = () => {
       <SectionManfaat />
       <SectionCaraKerja />
       <SectionTestimonial />
+      <SectionCTA />
     </>
   );
 };

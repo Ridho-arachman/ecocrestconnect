@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Props = {
   href?: string;
@@ -7,13 +9,21 @@ type Props = {
 };
 
 const Menu: React.FC<Props> = ({ href = "/", type }) => {
+  const pathname = usePathname();
   const menuLg = (
     <ul className="hidden lg:flex menu menu-horizontal px-1 font-medium">
       <li>
-        <Link href={href}>Beranda</Link>
+        <Link href={href} className={pathname === href ? "active" : ""}>
+          Beranda
+        </Link>
       </li>
       <li>
-        <Link href={"/"}>Tentang Kami</Link>
+        <Link
+          href={"/tentang-kami"}
+          className={pathname === "/tentang-kami" ? "active" : ""}
+        >
+          Tentang Kami
+        </Link>
       </li>
       <li>
         <details>
@@ -42,7 +52,7 @@ const Menu: React.FC<Props> = ({ href = "/", type }) => {
         <Link href={"/"}>Beranda</Link>
       </li>
       <li>
-        <Link href={"/"}>Tentang Kami</Link>
+        <Link href={"/tentang-kami"}>Tentang Kami</Link>
       </li>
       <li>
         <details open>
