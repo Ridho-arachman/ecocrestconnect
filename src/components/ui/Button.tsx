@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { ButtonProps } from "@/types/button";
 
 const Button = ({ className, children, onClick }: ButtonProps) => {
@@ -5,7 +6,7 @@ const Button = ({ className, children, onClick }: ButtonProps) => {
     <button
       aria-label="button"
       type="button"
-      className={className}
+      className={cn("text-white", className)}
       onClick={onClick}
     >
       {children}

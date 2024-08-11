@@ -9,9 +9,7 @@ const CardSide = ({
   alt,
   height,
   width,
-  lessPadding = false,
   btn = false,
-  btnClassname,
   btnDescription,
 }: CardProps) => {
   return (
@@ -24,7 +22,7 @@ const CardSide = ({
             <Button className="btn btn-neutral rounded-none">
               {btnDescription}
             </Button>
-            <Button className="btn btn-ghost hover:btn-link hover:text-neutral">
+            <Button className="btn btn-ghost hover:btn-link hover:text-neutral text-black">
               Bergabung
             </Button>
           </div>

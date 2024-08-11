@@ -60,8 +60,8 @@ const SectionDaftarFitur = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-5 mt-10">
-          <Button className="btn btn-outline rounded-none">
+        <div className="flex justify-center gap-5 mt-24">
+          <Button className="btn btn-outline rounded-none text-black">
             Lihat Selengkapnya
           </Button>
           <Link
