@@ -1,7 +1,7 @@
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
+import React, { memo } from "react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,4 +36,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

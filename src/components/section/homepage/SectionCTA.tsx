@@ -1,11 +1,11 @@
-import Card from "@/ui/Card";
+import CardSide from "@/ui/card/CardSide";
 import React from "react";
 
 const SectionCTA = () => {
   return (
     <section className="mt-28 flex justify-center items-center mb-28">
       <div className="m-auto border-2 border-black mx-4 md:mx-10">
-        <Card
+        <CardSide
           btn
           btnClassname="btn btn-neutral rounded-none "
           btnDescription="Daftar"
@@ -15,7 +15,6 @@ const SectionCTA = () => {
           height={300}
           width={300}
           src="/1.jpg"
-          type="side"
         />
       </div>
     </section>

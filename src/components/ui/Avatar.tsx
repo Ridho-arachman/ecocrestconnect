@@ -1,9 +1,7 @@
 import Image from "next/image";
+import { AvatarProps } from "@/types/avatar";
 
-type Props = {
-  src: string;
-};
-const Avatar: React.FC<Props> = ({ src }) => {
+const Avatar = ({ src }: AvatarProps) => {
   return (
     <div className="avatar">
       <div className="w-24 rounded-full">
