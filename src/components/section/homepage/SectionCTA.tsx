@@ -3,8 +3,8 @@ import React from "react";
 
 const SectionCTA = () => {
   return (
-    <section className="mt-28 flex justify-center items-center mb-28">
-      <div className="m-auto border-2 border-black mx-4 md:mx-10">
+    <section className="mb-28 mt-28 flex items-center justify-center">
+      <div className="m-auto mx-4 border-2 border-black md:mx-10">
         <CardSide
           btn
           btnClassname="btn btn-neutral rounded-none "

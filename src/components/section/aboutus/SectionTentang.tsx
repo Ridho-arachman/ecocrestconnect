@@ -6,17 +6,17 @@ import React from "react";
 
 const SectionTentang = () => {
   return (
-    <section className="mt-16 mx-3 md:mx-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
+    <section className="mx-3 mt-16 md:mx-16">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div className="flex flex-col gap-3">
           <Image
             src={"/logo.ico"}
             alt="Gambar Icon"
             width={100}
             height={100}
-            className="grayscale hover:grayscale-0 cursor-pointer"
+            className="cursor-pointer grayscale hover:grayscale-0"
           />
-          <h1 className="font-bold text-3xl">
+          <h1 className="text-3xl font-bold">
             Sejarah, Visi, dan Misi Platform Kami
           </h1>
           <p>
@@ -32,20 +32,20 @@ const SectionTentang = () => {
             </Button>
             <Link
               href={""}
-              className="btn btn-ghost hover:underline hover:decoration-2 rounded-none hover:bg-white  hover:underline-offset-8 group/link"
+              className="group/link btn btn-ghost rounded-none hover:bg-white hover:underline hover:decoration-2 hover:underline-offset-8"
             >
               Daftar Sekarang{" "}
-              <ChevronRight className="group-hover/link:rotate-90 transition-all duration-500" />
+              <ChevronRight className="transition-all duration-500 group-hover/link:rotate-90" />
             </Link>
           </div>
         </div>
-        <div className="sm:flex sm:justify-center items-center">
+        <div className="items-center sm:flex sm:justify-center">
           <Image
             src={"/1.jpg"}
             alt="Gambar Icon"
             width={900}
             height={300}
-            className="object-cover w-full h-[400px] "
+            className="h-[400px] w-full object-cover"
           />
         </div>
       </div>

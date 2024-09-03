@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const SectionManfaat = () => {
   return (
-    <section className="px-5 md:px-10 mt-24">
+    <section className="mt-24 px-5 md:px-10">
       <div className="md:grid md:grid-cols-2">
         <div className="md:px-6">
           <div>
-            <h4 className="font-medium mb-4">Bergabung</h4>
+            <h4 className="mb-4 font-medium">Bergabung</h4>
             <div>
-              <h1 className="font-bold text-4xl mb-4">
+              <h1 className="mb-4 text-4xl font-bold">
                 Manfaat Bergabung dengan Platform Ini
               </h1>
               <p>
@@ -27,17 +27,17 @@ const SectionManfaat = () => {
               </p>
             </div>
           </div>
-          <div className="mt-5 mb-6">
+          <div className="mb-6 mt-5">
             <Button className="btn btn-outline rounded-none">Gabung</Button>
           </div>
         </div>
-        <div className="md:flex md:justify-center md:items-center">
+        <div className="md:flex md:items-center md:justify-center">
           <Image
             src={"/1.jpg"}
             alt="Gambar Manfaat"
             width={600}
             height={300}
-            className="object-cover mx-auto h-64 md:h-[450px]"
+            className="mx-auto h-64 object-cover md:h-[450px]"
           />
         </div>
       </div>

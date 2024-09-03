@@ -3,12 +3,12 @@ import Card from "@/ui/card/Card";
 const SectionCaraKerja = () => {
   return (
     <section className="mt-16 text-center">
-      <div className=" flex">
-        <h1 className="text-3xl font-bold mt-16 mx-auto sm:w-3/4 sm:text-4xl  ">
+      <div className="flex">
+        <h1 className="mx-auto mt-16 text-3xl font-bold sm:w-3/4 sm:text-4xl">
           Panduan Penggunaan Platform untuk Edukasi dan Kolaborasi
         </h1>
       </div>
-      <div className="flex mt-16">
+      <div className="mt-16 flex">
         <div className="m-auto grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           <Card
             alt="Gambar Card"

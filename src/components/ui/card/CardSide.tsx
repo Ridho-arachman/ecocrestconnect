@@ -13,7 +13,7 @@ const CardSide = ({
   btnDescription,
 }: CardProps) => {
   return (
-    <div className="card lg:card-side rounded-none bg-base-100 shadow-xl lg:grid lg:grid-cols-2">
+    <div className="card rounded-none bg-base-100 shadow-xl lg:card-side lg:grid lg:grid-cols-2">
       <div className="card-body m-auto">
         <h2 className="card-title text-4xl font-bold">{title}</h2>
         <p>{description}</p>
@@ -22,7 +22,7 @@ const CardSide = ({
             <Button className="btn btn-neutral rounded-none">
               {btnDescription}
             </Button>
-            <Button className="btn btn-ghost hover:btn-link hover:text-neutral text-black">
+            <Button className="btn btn-ghost text-black hover:btn-link hover:text-neutral">
               Bergabung
             </Button>
           </div>
@@ -34,7 +34,7 @@ const CardSide = ({
           alt={alt}
           width={width}
           height={height}
-          className="object-cover w-full min-h-64 max-h-96 "
+          className="max-h-96 min-h-64 w-full object-cover"
         />
       </figure>
     </div>

@@ -3,14 +3,14 @@ import Button from "@/ui/Button";
 const SectionHeaderHero = () => {
   return (
     <section
-      className="hero min-h-screen mt-16"
+      className="hero mt-16 min-h-screen"
       style={{
         backgroundImage: "url(/1.jpg)",
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-md lg:max-w-lg text-white">
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-md text-white lg:max-w-lg">
           <h1 className="mb-5 text-4xl font-bold">
             Platform Pelestarian Lingkungan yang Menginspirasi dan Memfasilitasi
           </h1>

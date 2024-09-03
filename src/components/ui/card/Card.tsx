@@ -18,8 +18,8 @@ const Card = ({
   return (
     <div
       className={cn(
-        "card bg-base-100 max-w-80 min-w-64 shadow-xl",
-        !!lessPadding && "card-compact"
+        "card min-w-64 max-w-80 bg-base-100 shadow-xl",
+        !!lessPadding && "card-compact",
       )}
     >
       <figure>
@@ -28,7 +28,7 @@ const Card = ({
           alt={alt}
           width={width}
           height={height}
-          className="object-cover w-full h-80"
+          className="h-80 w-full object-cover"
         />
       </figure>
       <div className="card-body flex flex-col items-center">

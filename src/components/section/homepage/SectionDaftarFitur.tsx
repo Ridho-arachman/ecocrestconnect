@@ -5,13 +5,13 @@ import Link from "next/link";
 
 const SectionDaftarFitur = () => {
   return (
-    <section className="flex flex-col items-center px-5 mt-16 justify-center">
-      <div className="text-center mb-14">
+    <section className="mt-16 flex flex-col items-center justify-center px-5">
+      <div className="mb-14 text-center">
         <span className="font-bold">EcoCrestConnect</span>
         <div className="mt-6">
-          <h2 className="text-3xl font-bold mb-4 px-9">
+          <h2 className="mb-4 px-9 text-3xl font-bold">
             Temukan
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 px-2">
+            <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text px-2 text-transparent">
               Fitur Utama
             </span>
             Kami di Sini
@@ -25,7 +25,7 @@ const SectionDaftarFitur = () => {
       </div>
       <div>
         <div className="flex">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 m-auto">
+          <div className="m-auto grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
             <Card
               alt="Gambar Card"
               title="Edukasi Lingkungan"
@@ -60,16 +60,16 @@ const SectionDaftarFitur = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-5 mt-24">
+        <div className="mt-24 flex justify-center gap-5">
           <Button className="btn btn-outline rounded-none text-black">
             Lihat Selengkapnya
           </Button>
           <Link
             href={""}
-            className="btn btn-ghost hover:underline hover:decoration-2 rounded-none hover:bg-white  hover:underline-offset-8 group/link"
+            className="group/link btn btn-ghost rounded-none hover:bg-white hover:underline hover:decoration-2 hover:underline-offset-8"
           >
             Daftar Sekarang{" "}
-            <ChevronRight className="group-hover/link:rotate-90 transition-all duration-500" />
+            <ChevronRight className="transition-all duration-500 group-hover/link:rotate-90" />
           </Link>
         </div>
       </div>
