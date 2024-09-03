@@ -1,6 +1,19 @@
 import type { Config } from "tailwindcss";
 
 const config = {
+  theme: {
+    extend: {
+      keyframes: {
+        infinitSlide: {
+          from: { transform: "translatex(0%)" },
+          to: { transform: "translatex(-100%)" },
+        },
+      },
+      animation: {
+        infinitSlide: "infinitSlide 20s linear infinite",
+      },
+    },
+  },
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",

@@ -1,4 +1,7 @@
+import SectionDaftarLogoMitra from "@/section/aboutus/SectionDaftarLogoMitra";
 import SectionHeaderHero from "@/section/aboutus/SectionHeaderHero";
+import SectionTentang from "@/section/aboutus/SectionTentang";
+import SectionTim from "@/section/aboutus/SectionTim";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,6 +13,9 @@ const page = () => {
   return (
     <>
       <SectionHeaderHero />
+      <SectionTentang />
+      <SectionDaftarLogoMitra />
+      <SectionTim />
     </>
   );
 };

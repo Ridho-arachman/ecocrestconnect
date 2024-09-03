@@ -16,7 +16,7 @@ const SectionTestimonial = () => {
           </h4>
           <div className="[&>p]:font-medium flex flex-col justify-center items-center mt-10">
             <Avatar src={"/1.jpg"} />
-            <p className="mt-2">John Doe</p>
+            <p className="mt-2">Muhammad Ridho Arachman</p>
             <p>Direktur, ABC Company</p>
           </div>
         </div>

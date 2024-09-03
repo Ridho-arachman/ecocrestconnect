@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navbar-start flex flex-row">
         <MenuLg />
         <Button
-          className="absolute top-5 left-6 lg:hidden z-20  ml-5"
+          className="absolute top-5 left-6 lg:hidden z-20  ml-5 text-black"
           onClick={handleClick}
         >
           {open ? <X /> : <MenuIcon />}

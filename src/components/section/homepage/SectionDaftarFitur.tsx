@@ -66,10 +66,10 @@ const SectionDaftarFitur = () => {
           </Button>
           <Link
             href={""}
-            className="btn btn-ghost hover:underline hover:decoration-2 rounded-none hover:bg-white hover:underline-offset-8 group/link"
+            className="btn btn-ghost hover:underline hover:decoration-2 rounded-none hover:bg-white  hover:underline-offset-8 group/link"
           >
             Daftar Sekarang{" "}
-            <ChevronRight className="group-hover/link:rotate-90" />
+            <ChevronRight className="group-hover/link:rotate-90 transition-all duration-500" />
           </Link>
         </div>
       </div>

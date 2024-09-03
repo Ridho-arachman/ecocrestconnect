@@ -22,7 +22,7 @@ const MenuLg = ({ href = "/" }: MenuProps) => {
       <li>
         <details>
           <summary>Layanan</summary>
-          <ul className="p-2">
+          <ul className="p-2 rounded-none top-11">
             <li>
               <Link href={"/"}>Artikel</Link>
             </li>
