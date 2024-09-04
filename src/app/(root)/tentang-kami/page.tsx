@@ -1,4 +1,5 @@
 import SectionDaftarLogoMitra from "@/section/aboutus/SectionDaftarLogoMitra";
+import SectionDaftarPenghargaan from "@/section/aboutus/SectionDaftarPenghargaan";
 import SectionHeaderHero from "@/section/aboutus/SectionHeaderHero";
 import SectionTentang from "@/section/aboutus/SectionTentang";
 import SectionTim from "@/section/aboutus/SectionTim";
@@ -16,6 +17,7 @@ const page = () => {
       <SectionTentang />
       <SectionDaftarLogoMitra />
       <SectionTim />
+      <SectionDaftarPenghargaan />
     </>
   );
 };

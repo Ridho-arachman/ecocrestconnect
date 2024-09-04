@@ -10,7 +10,7 @@ const SectionTentang = () => {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div className="flex flex-col gap-3">
           <Image
-            src={"/logo.ico"}
+            src={"/logo/logoapp/logo.ico"}
             alt="Gambar Icon"
             width={100}
             height={100}

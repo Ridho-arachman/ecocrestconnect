@@ -1,3 +1,3 @@
-export type AvatarProps = {
-  src: string;
-};
+import { Image } from "./image";
+
+export type AvatarProps = Image;

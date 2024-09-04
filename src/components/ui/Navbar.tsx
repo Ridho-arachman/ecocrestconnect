@@ -22,7 +22,12 @@ const Navbar = () => {
         {open && <MenuSmMd />}
       </div>
       <div className="navbar-center">
-        <Image src={"/logo.png"} alt="Gambar Logo" width={50} height={50} />
+        <Image
+          src={"/logo/logoapp/logo.ico"}
+          alt="Gambar Logo"
+          width={50}
+          height={50}
+        />
       </div>
       <div className="navbar-end">
         <Button className="btn btn-primary btn-sm text-white md:btn-lg">

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { AvatarProps } from "@/types/avatar";
 
-const Avatar = ({ src }: AvatarProps) => {
+const Avatar = ({ src, alt, height, width }: AvatarProps) => {
   return (
     <div className="avatar">
-      <div className="w-24 rounded-full">
-        <Image alt="avatar" src={src} width={100} height={50} />
+      <div className="w-20 rounded-full">
+        <Image alt={alt} src={src} width={width} height={height} />
       </div>
     </div>
   );

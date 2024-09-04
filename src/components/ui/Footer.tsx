@@ -7,7 +7,12 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-10 shadow-inner">
       <nav className="flex flex-col items-center justify-center gap-10 lg:w-full lg:flex-row lg:justify-between lg:gap-0">
-        <Image src={"/logo.ico"} alt="Gambar Icon" width={80} height={0} />
+        <Image
+          src={"/logo/logoapp/logo.ico"}
+          alt="Gambar Icon"
+          width={80}
+          height={0}
+        />
         <div className="flex flex-col gap-3 md:flex-row md:gap-10 lg:ml-10">
           <Link href={"/"}>Tautan 1</Link>
           <Link href={"/"}>Tautan 2</Link>
