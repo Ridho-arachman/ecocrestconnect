@@ -1,7 +1,9 @@
+import Link from "next/link";
+import Image from "next/image";
 import Button from "@/ui/Button";
 import Card from "@/ui/card/Card";
 import { ChevronRight } from "lucide-react";
-import Link from "next/link";
+import daftarfitur from "@/data/mock/daftarfitur.json";
 
 const SectionDaftarFitur = () => {
   return (
@@ -26,38 +28,28 @@ const SectionDaftarFitur = () => {
       <div>
         <div className="flex">
           <div className="m-auto grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
-            <Card
-              alt="Gambar Card"
-              title="Edukasi Lingkungan"
-              description="Baca artikel, blog, dan tonton video tentang isu-isu lingkungan dan cara melestarikannya."
-              src="/1.jpg"
-              height={300}
-              width={300}
-            />
-            <Card
-              alt="Gambar Card"
-              title="Kegiatan dan Event"
-              description="Temukan kalender kegiatan lingkungan lokal dan global serta ikut serta dalam acara yang menarik."
-              src="/1.jpg"
-              height={300}
-              width={300}
-            />
-            <Card
-              alt="Gambar Card"
-              title="Komunitas Lingkungan"
-              description="Bergabunglah dengan forum dan grup diskusi untuk berbagi ide, tips, dan pengalaman tentang pelestarian lingkungan."
-              src="/1.jpg"
-              height={300}
-              width={300}
-            />
-            <Card
-              alt="Gambar Card"
-              title="Komunitas Lingkungan"
-              description="Bergabunglah dengan forum dan grup diskusi untuk berbagi ide, tips, dan pengalaman tentang pelestarian lingkungan."
-              src="/1.jpg"
-              height={300}
-              width={300}
-            />
+            {daftarfitur.map((item, index) => (
+              <Card key={index}>
+                <Card.Header>
+                  <Image
+                    alt={item.alt}
+                    src={item.src}
+                    height={300}
+                    width={300}
+                    className="h-64 w-full object-cover"
+                  />
+                </Card.Header>
+                <Card.Body>
+                  <div className="flex flex-col items-center">
+                    <h2 className="card-title font-semibold">{item.title}</h2>
+                    <p>{item.description}</p>
+                  </div>
+                  <Card.Action>
+                    <Button>Masuk</Button>
+                  </Card.Action>
+                </Card.Body>
+              </Card>
+            ))}
           </div>
         </div>
         <div className="mt-24 flex justify-center gap-5">

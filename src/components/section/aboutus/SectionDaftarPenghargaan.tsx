@@ -1,4 +1,5 @@
 import Image from "next/image";
+import daftarpenghargaan from "@/data/mock/daftarpenghargaan.json";
 
 const SectionDaftarPenghargaan = () => {
   return (
@@ -11,54 +12,15 @@ const SectionDaftarPenghargaan = () => {
         </p>
       </div>
       <div className="mt-10 grid grid-cols-2 gap-2 sm:mt-0">
-        <div className="flex items-center justify-center bg-slate-600">
-          <Image
-            src={"/logo/logopenghargaan/1.png"}
-            alt={"Gambar"}
-            width={50}
-            height={50}
-          />
-        </div>
-        <div className="flex items-center justify-center bg-slate-600">
-          <Image
-            src={"/logo/logopenghargaan/2.png"}
-            alt={"Gambar"}
-            width={50}
-            height={50}
-          />
-        </div>
-        <div className="flex items-center justify-center bg-slate-600">
-          <Image
-            src={"/logo/logopenghargaan/3.png"}
-            alt={"Gambar"}
-            width={50}
-            height={50}
-          />
-        </div>
-        <div className="flex items-center justify-center bg-slate-600">
-          <Image
-            src={"/logo/logopenghargaan/4.png"}
-            alt={"Gambar"}
-            width={50}
-            height={50}
-          />
-        </div>
-        <div className="flex items-center justify-center bg-slate-600">
-          <Image
-            src={"/logo/logopenghargaan/5.png"}
-            alt={"Gambar"}
-            width={50}
-            height={50}
-          />
-        </div>
-        <div className="flex items-center justify-center bg-slate-600">
-          <Image
-            src={"/logo/logopenghargaan/6.png"}
-            alt={"Gambar"}
-            width={50}
-            height={50}
-          />
-        </div>
+        {daftarpenghargaan.map((item, index) => (
+          <div
+            className="relative flex cursor-pointer items-center justify-center bg-slate-600 shadow"
+            key={index}
+          >
+            <Image src={item.src} alt={item.alt} width={50} height={50} />
+            <div className="absolute bottom-0 left-0 right-0 top-0 w-full bg-white/5 backdrop-blur-sm transition-all duration-500 hover:backdrop-blur-none"></div>
+          </div>
+        ))}
       </div>
     </section>
   );

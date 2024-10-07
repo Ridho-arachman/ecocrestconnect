@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { memo } from "react";
+import link from "@/data/link.json";
+import { memo } from "react";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
@@ -11,14 +12,14 @@ const Footer = () => {
           src={"/logo/logoapp/logo.ico"}
           alt="Gambar Icon"
           width={80}
-          height={0}
+          height={80}
         />
         <div className="flex flex-col gap-3 md:flex-row md:gap-10 lg:ml-10">
-          <Link href={"/"}>Tautan 1</Link>
-          <Link href={"/"}>Tautan 2</Link>
-          <Link href={"/"}>Tautan 3</Link>
-          <Link href={"/"}>Tautan 4</Link>
-          <Link href={"/"}>Tautan 5</Link>
+          {link.map((link, i) => (
+            <Link key={i} href={link.href}>
+              {link.linkname}
+            </Link>
+          ))}
         </div>
         <div className="flex gap-5 lg:gap-1">
           <Facebook className="hover:text-blue-600" />

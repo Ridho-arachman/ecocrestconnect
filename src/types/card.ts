@@ -1,10 +1,17 @@
-import { Image } from "./image";
-
-export type CardProps = {
-  title?: string;
-  description?: string;
+export interface CardProps {
+  children: React.ReactNode;
   lessPadding?: boolean;
-  btn?: boolean;
-  btnClassname?: string;
-  btnDescription?: string;
-} & Image;
+}
+
+export interface CardHeader {
+  children: React.ReactNode;
+}
+
+export interface CardBody {
+  children: React.ReactNode;
+}
+
+export interface ActionCard {
+  children: React.ReactNode;
+  position?: "justify-end" | "justify-start";
+}

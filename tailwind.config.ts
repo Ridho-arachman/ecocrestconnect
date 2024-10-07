@@ -3,6 +3,12 @@ import type { Config } from "tailwindcss";
 const config = {
   theme: {
     extend: {
+      width: {
+        "100": "100px",
+      },
+      height: {
+        "100": "100px",
+      },
       keyframes: {
         infinitSlide: {
           from: { transform: "translatex(0%)" },

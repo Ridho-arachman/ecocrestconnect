@@ -1,14 +1,16 @@
 "use client";
-import { memo, useState } from "react";
+import { useState } from "react";
 import Button from "@/ui/Button";
 import Image from "next/image";
 import MenuLg from "./menu/MenuLg";
 import MenuSmMd from "./menu/MenuSmMd";
+import link from "@/data/link.json";
 import { Menu as MenuIcon, X } from "lucide-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleClick = (): void => setOpen(!open);
+
   return (
     <nav className="navbar fixed top-0 z-10 w-full bg-white px-10 shadow">
       <div className="navbar-start flex flex-row">
