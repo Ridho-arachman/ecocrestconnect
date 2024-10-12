@@ -1,3 +1,4 @@
+import Badge from "@/ui/Badge";
 import Button from "@/ui/Button";
 import Card from "@/ui/card/Card";
 import { ChevronRight } from "lucide-react";
@@ -77,9 +78,7 @@ const SectionDaftarHeaderBlog = () => {
           </Card.Header>
           <Card.Body>
             <div className="mb-3 flex items-center gap-3">
-              <Button className="badge badge-primary rounded-none p-3">
-                primary
-              </Button>
+              <Badge>Kategory</Badge>
               <p className="font-semibold">Bacaan 5 menit</p>
             </div>
             <h3 className="text-xl font-semibold">
