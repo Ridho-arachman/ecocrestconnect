@@ -36,18 +36,26 @@ const SectionKirimanHeaderBlog = ({ id }: { id: number }) => {
           <div className="flex gap-5">
             <div className="flex flex-col text-sm">
               Ditulis oleh
-              <span className="">Nama Lengkap</span>
+              <span className="font-medium">Nama Lengkap</span>
             </div>
             <div className="flex flex-col text-sm">
               Dipublikasikan pada
-              <span>22 Januari 2021</span>
+              <span className="font-medium">22 Januari 2021</span>
             </div>
           </div>
           <div className="flex gap-3">
-            <Link2 />
-            <Linkedin />
-            <X />
-            <Instagram />
+            <Link href={""}>
+              <Link2 />
+            </Link>
+            <Link href={""}>
+              <Linkedin />
+            </Link>
+            <Link href={""}>
+              <X />
+            </Link>
+            <Link href={""}>
+              <Instagram />
+            </Link>
           </div>
         </figcaption>
       </figure>
