@@ -1,5 +1,4 @@
 import CardSide from "@/ui/card/CardSide";
-import React from "react";
 
 const SectionCTA = () => {
   return (

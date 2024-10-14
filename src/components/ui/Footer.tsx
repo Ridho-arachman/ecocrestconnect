@@ -6,7 +6,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 shadow-inner">
+    <footer className="footer footer-center mt-16 p-10 shadow-inner">
       <nav className="flex flex-col items-center justify-center gap-10 lg:w-full lg:flex-row lg:justify-between lg:gap-0">
         <Image
           src={"/logo/logoapp/logo.ico"}

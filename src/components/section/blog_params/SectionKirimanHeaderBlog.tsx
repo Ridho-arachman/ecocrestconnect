@@ -4,10 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SectionKirimanHeaderBlog = ({ id }: { id: number }) => {
-  console.log(id);
-
   return (
-    <section className="l mx-auto mt-32 max-w-xs md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+    <section className="mx-auto mt-32 max-w-xs md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
       <div className="flex flex-col items-start justify-start gap-3">
         <Link
           href={""}

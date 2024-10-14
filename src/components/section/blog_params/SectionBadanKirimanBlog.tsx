@@ -1,10 +1,9 @@
 import Avatar from "@/ui/Avatar";
 import { ChevronRight } from "lucide-react";
-import React from "react";
 
 const SectionBadanKirimanBlog = () => {
   return (
-    <article className="mx-auto mt-20 max-w-4xl">
+    <article className="mx-auto mt-20 max-w-xs sm:max-w-2xl">
       <div className="flex flex-col gap-8">
         <span className="flex text-base">
           <p className="font-semibold">Artikel</p>
