@@ -20,7 +20,7 @@ const config = {
       },
     },
   },
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -28,9 +28,6 @@ const config = {
     "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
-  daisyui: {
-    themes: false,
-  },
   plugins: [require("tailwindcss-animate"), require("daisyui")],
 } satisfies Config;
 

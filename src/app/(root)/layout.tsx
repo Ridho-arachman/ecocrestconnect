@@ -11,8 +11,8 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="id" data-theme="light">
-      <body className={cn("bg-primary-foreground", jost.className)}>
+    <html lang="id">
+      <body>
         <Navbar />
         {children}
         <Footer />
