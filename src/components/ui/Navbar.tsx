@@ -6,6 +6,7 @@ import MenuLg from "./menu/MenuLg";
 import MenuSmMd from "./menu/MenuSmMd";
 import link from "@/data/link.json";
 import { Menu as MenuIcon, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
       <div className="navbar-start flex flex-row">
         <MenuLg />
         <Button
-          className="absolute left-6 top-5 z-20 ml-5 text-black lg:hidden"
+          className="absolute top-5 left-6 z-20 ml-5 text-black lg:hidden"
           onClick={handleClick}
         >
           {open ? <X /> : <MenuIcon />}
@@ -31,8 +32,9 @@ const Navbar = () => {
           height={50}
         />
       </div>
-      <div className="navbar-end">
-        <Button className="btn btn-primary btn-sm text-white md:btn-lg">
+      <div className="navbar-end gap-9">
+        <ThemeToggle />
+        <Button className="btn btn-primary btn-sm md:btn-lg text-white">
           Daftar
         </Button>
       </div>
