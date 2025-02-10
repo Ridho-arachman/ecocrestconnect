@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = (): void => setOpen(!open);
 
   return (
-    <nav className="navbar fixed top-0 z-10 w-full bg-white px-10 shadow">
+    <nav className="navbar glass fixed top-0 z-10 w-full px-10 shadow-sm">
       <div className="navbar-start flex flex-row">
         <MenuLg />
         <Button
@@ -32,11 +32,11 @@ const Navbar = () => {
           height={50}
         />
       </div>
-      <div className="navbar-end gap-9">
-        <ThemeToggle />
-        <Button className="btn btn-primary btn-sm md:btn-lg text-white">
+      <div className="navbar-end flex-col md:flex-row md:gap-4">
+        <Button className="btn btn-primary btn-sm md:btn-lg mb-2 text-white md:order-2">
           Daftar
         </Button>
+        <ThemeToggle variant="md" />
       </div>
     </nav>
   );

@@ -13,7 +13,7 @@ const SectionDaftarFitur = () => {
         <div className="mt-6">
           <h2 className="mb-4 px-9 text-3xl font-bold">
             Temukan
-            <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text px-2 text-transparent">
+            <span className="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text px-2 text-transparent">
               Fitur Utama
             </span>
             Kami di Sini

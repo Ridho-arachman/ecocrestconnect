@@ -28,7 +28,7 @@ const SectionKirimanHeaderBlog = ({ id }: { id: number }) => {
           alt="Gambar Blog"
           width={800}
           height={600}
-          className="aspect-[16/7] w-full object-cover"
+          className="aspect-16/7 w-full object-cover"
         />
         <figcaption className="group/figcaption mt-5 flex flex-col gap-9 md:flex-row md:justify-between">
           <div className="flex gap-5">

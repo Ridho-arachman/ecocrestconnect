@@ -1,4 +1,44 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
-  themes: all;
+  themes:
+    light --default,
+    abyss;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --width-100: 100px;
+
+  --height-100: 100px;
+
+  --animate-infinit-slide: infinitSlide 20s linear infinite;
+
+  @keyframes infinitSlide {
+    from {
+      transform: translatex(0%);
+    }
+    to {
+      transform: translatex(-100%);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }

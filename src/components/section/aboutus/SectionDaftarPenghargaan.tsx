@@ -14,11 +14,11 @@ const SectionDaftarPenghargaan = () => {
       <div className="mt-10 grid grid-cols-2 gap-2 sm:mt-0">
         {daftarpenghargaan.map((item, index) => (
           <div
-            className="relative flex cursor-pointer items-center justify-center bg-slate-600 shadow"
+            className="relative flex cursor-pointer items-center justify-center bg-slate-600 shadow-sm"
             key={index}
           >
             <Image src={item.src} alt={item.alt} width={50} height={50} />
-            <div className="absolute bottom-0 left-0 right-0 top-0 w-full bg-white/5 backdrop-blur-sm transition-all duration-500 hover:backdrop-blur-none"></div>
+            <div className="absolute bottom-0 left-0 right-0 top-0 w-full bg-white/5 backdrop-blur-xs transition-all duration-500 hover:backdrop-blur-none"></div>
           </div>
         ))}
       </div>

@@ -8,7 +8,7 @@ const SectionDaftarLogoMitra = () => {
         Daftar mitra dan organisasi yang mendukung inisiatif lingkungan.
       </h4>
       <div className="group/animate mb-16 grid w-[200vw] grid-cols-2">
-        <div className="flex animate-infinitSlide justify-around group-hover/animate:paused">
+        <div className="animate-infinit-slide group-hover/animate:paused flex justify-around">
           {daftarlogomitra.map((item, index) => (
             <Image
               key={index}
@@ -20,7 +20,7 @@ const SectionDaftarLogoMitra = () => {
             />
           ))}
         </div>
-        <div className="flex animate-infinitSlide justify-around group-hover/animate:paused">
+        <div className="animate-infinit-slide group-hover/animate:paused flex justify-around">
           {daftarlogomitra.map((item, index) => (
             <Image
               key={index}
