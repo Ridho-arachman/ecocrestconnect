@@ -1,3 +1,3 @@
 export type BlogParams = {
-  params: { blog_id: number };
+  params: { blog_id: string };
 };
