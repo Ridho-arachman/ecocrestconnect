@@ -4,10 +4,11 @@ import SectionTestimonial from "@/section/blog_params/SectionTestimonial";
 import { BlogParams } from "@/types/blog/blogParams";
 import React from "react";
 
-const page = ({ params }: BlogParams) => {
+const page = async ({ params }: { params: Promise<{ blog_id: string }> }) => {
+  const slug = (await params).blog_id;
   return (
     <>
-      <SectionKirimanHeaderBlog id={params.blog_id} />
+      <SectionKirimanHeaderBlog id={slug} />
       <SectionBadanKirimanBlog />
       <SectionTestimonial />
     </>
